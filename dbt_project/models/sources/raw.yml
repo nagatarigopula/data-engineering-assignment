@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: raw
+    description: "Raw tables loaded from CSV and Weather API"
+    tables:
+      - name: listing
+      - name: orders
+      - name: orders_daily
+      - name: org
+      - name: outlet
+      - name: platform
+      - name: rank
+      - name: ratings_agg
+      - name: weather
+        description: "Hourly weather metrics from Open-Meteo API"
+        columns:
+          - name: outlet_id
+          - name: timestamp
+          - name: temperature_2m
+          - name: relative_humidity_2m
+          - name: wind_speed_10m
+

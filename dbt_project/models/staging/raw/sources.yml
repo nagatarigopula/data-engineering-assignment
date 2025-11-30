@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: airflow_raw
+    database: airflow
+    schema: raw
+    tables:
+      - name: listing
+      - name: orders
+      - name: orders_daily
+      - name: org
+      - name: outlet
+      - name: platform
+      - name: rank
+      - name: ratings_agg
+
